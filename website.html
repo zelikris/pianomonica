@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Piano Lessons </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #faf8f5;
+      --surface: #ffffff;
+      --text: #2f3640;
+      --muted: #7a828c;
+      --accent: #3b5b7a;
+      --accent-dark: #2a435b;
+      --border: #e6e1d9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.75;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: var(--accent-dark);
+      color: #f3efe8;
+      padding: 28px 20px;
+      text-align: center;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.25rem;
+      letter-spacing: 0.06em;
+      font-style: italic;
+    }
+    nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      padding: 0 20px;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 16px 4px;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    nav a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+    main {
+      max-width: 780px;
+      margin: 40px auto;
+      padding: 40px 48px 32px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+      border-radius: 8px;
+    }
+    .portrait {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .portrait img {
+      width: 100%;
+      max-width: 240px;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      padding: 6px;
+      background: var(--surface);
+    }
+    section {
+      display: none;
+      padding: 12px 0;
+    }
+    section.active {
+      display: block;
+    }
+    h2, h3, h4 {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: var(--accent-dark);
+      line-height: 1.3;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 0 0 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 36px 0 12px;
+    }
+    h4 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 28px 0 8px;
+    }
+    p { margin: 0 0 1.1em; }
+    ul {
+      padding-left: 22px;
+      margin: 0 0 1.2em;
+    }
+    li { margin-bottom: 6px; }
+    li::marker { color: var(--accent); }
+    .footer-note {
+      text-align: center;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      main { margin: 0; padding: 28px 20px; border-radius: 0; border-left: 0; border-right: 0; }
+      nav { gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p>Piano instruction for children, teens, and adults</p>
+  </header>
+
+  <nav>
+    <a onclick="showSection('about')">About</a>
+    <a onclick="showSection('lessons')">Lessons</a>
+<!--    <a onclick="showSection('contact')">Contact</a>-->
+  </nav>
+
+  <main>
+    <!-- About Page -->
+
+    <!-- Picture -->
+    <div class="portrait">
+      <img src="res/pic.png" alt="Mrs. Monica" />
+    </div>
+    
+    <section id="about" class="active">
+      <h2>About Mrs. Monica</h2>
+      <p>
+        Mrs. Monica brings warmth, encouragement, and joyful energy to every lesson she teaches. A classically trained pianist with a Piano Performance Diploma and more than 30 years of piano teaching experience, she is passionate about helping her students build confidence and experience the excitement of learning to play the piano.
+      </p>
+
+      <p>
+        With a Master of Music Degree in Piano Pedagogy and a Master's Degree in Music Education, both earned with highest honors, her academic background is extensive. She has also held a Preschool through 12th Grade Music Teaching Certificate for 15 years. Her extensive educational background allows her to combine teaching methods with a caring, child-centered approach.
+      </p>
+
+      <p>
+        Her lessons are engaging and age-appropriate, with children learning through music games, movement activities, listening exercises, creative storytelling, and hands-on exploration at the piano. She believes that children learn best when lessons are fun, interactive, and filled with positive encouragement. Her goal is to help every child develop a strong musical foundation while nurturing curiosity and a lifelong love of music.
+      </p>
+
+      <p>
+        As a member of the American College of Musicians and the National Guild of Piano Teachers, she believes that every student learns differently and adapts her teaching to each student's personality, learning style, and age. Her teaching emphasizes healthy technique, musical expression, creativity, and, most importantly, the joy of making music.
+      </p>
+
+      <p>
+        Beyond teaching, she is an experienced accompanist, having served as a pianist for church services and accompanied school choirs at performances and festivals. She also enjoys attending concerts, reading, and hiking. She considers it a privilege to share her love of music with each student and family she serves and looks forward to helping every child through the wonderful adventure of piano study.
+      </p>
+        
+
+      <h3>Teaching Philosophy</h3>
+      <ul>
+        <li>Music should be joyful and accessible.</li>
+        <li>Technique and creativity develop together.</li>
+        <li>Encouragement builds confidence.</li>
+        <li>Every student deserves a personalized learning path.</li>
+      </ul>
+
+      <p>
+        If you’re looking for a supportive teacher who helps students thrive, Mrs. Monica would love to
+        welcome you to her studio.
+      </p>
+    </section>
+
+    <!-- Lessons Page -->
+    <section id="lessons">
+      <h2></h2>
+
+      <h3></h3>
+
+      <h4></h4>
+      <p>
+        
+      </p>
+
+      <h4>Beginner Lessons</h4>
+      <p>Ideal for students with little or no experience. We cover:</p>
+      <ul>
+        <li>Reading music</li>
+        <li>Rhythm, technique, coordination</li>
+        <li>Interactive musical games, iPad music apps</li>
+        <li>Fun, motivating songs</li>
+      </ul>
+
+      <h4>Intermediate & Advanced Lessons</h4>
+      <p>For students who already read music and want to grow. We work on:</p>
+      <ul>
+        <li>Technique</li>
+        <li>Expression, dynamics, articulation, phrasing</li>
+        <li>Music theory, harmony, analysis</li>
+        <li>Overcoming stage fright, memorization strategies</li>
+        <li>More challenging repertoire</li>
+      </ul>
+
+      <h4>Adult Lessons</h4>
+      <p>
+        Flexible, goal-oriented lessons for adults returning to piano or starting for the
+        first time. Learn at your own pace with music you enjoy.
+      </p>
+
+      <h4>Methods</h4>
+      
+      <ul>
+        <li>Faber Piano Adventures</li>
+        <li>Music for Little Mozarts</li>
+        <li>Michael Aaron’s Piano Course</li>
+        <li>Alfred Basic Piano</li>
+      </ul>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <p>
+        I’d love to answer your questions or help you schedule a trial lesson.
+      </p>
+
+      <h3>Contact Form</h3>
+      <form>
+        <p>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" />
+        </p>
+        <p>
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" />
+        </p>
+        <p>
+          <label for="age">Student’s age:</label><br />
+          <input type="text" id="age" name="age" />
+        </p>
+        <p>
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" rows="4"></textarea>
+        </p>
+        <p>
+          <button type="submit">Send Message</button>
+        </p>
+      </form>
+
+      <p>
+        I look forward to helping you begin your musical journey.
+      </p>
+    </section>
+
+    <div class="footer-note">
+      &copy; <span id="year"></span> Piano Lessons with Mrs. Monica 
+    </div>
+  </main>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('main section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      const active = document.getElementById(id);
+      if (active) active.classList.add('active');
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
