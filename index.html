@@ -111,12 +111,14 @@
       font-weight: 600;
       margin: 28px 0 8px;
     }
-    p { margin: 0 0 1.1em; }
+    p { margin: 0 0 1.1em; font-family: Tahoma, sans-serif; }
     ul {
       padding-left: 22px;
       margin: 0 0 1.2em;
     }
     li { margin-bottom: 6px; }
+    #lessons li { font-family: Tahoma, sans-serif; }
+    #lessons h2, #lessons h3, #lessons h4 { color: #1e6fd9; }
     li::marker { color: var(--accent); }
     .footer-note {
       text-align: center;
@@ -136,13 +138,13 @@
 </head>
 <body>
   <header>
-    <p>Piano instruction for children, teens, and adults</p>
+    <p>Piano instruction for children, teens, and adults around Duluth, GA</p>
   </header>
 
   <nav>
     <a onclick="showSection('about')">About</a>
     <a onclick="showSection('lessons')">Lessons</a>
-<!--    <a onclick="showSection('contact')">Contact</a>-->
+    <a onclick="showSection('contact')">Contact</a>
   </nav>
 
   <main>
@@ -154,30 +156,25 @@
     </div>
     
     <section id="about" class="active">
-      <h2>About Mrs. Monica</h2>
+      <h2 style="color: #1e6fd9;">About Mrs. Monica</h2>
       <p>
         Mrs. Monica brings warmth, encouragement, and joyful energy to every lesson she teaches. A classically trained pianist with a Piano Performance Diploma and more than 30 years of piano teaching experience, she is passionate about helping her students build confidence and experience the excitement of learning to play the piano.
       </p>
 
       <p>
-        With a Master of Music Degree in Piano Pedagogy and a Master's Degree in Music Education, both earned with highest honors, her academic background is extensive. She has also held a Preschool through 12th Grade Music Teaching Certificate for 15 years. Her extensive educational background allows her to combine teaching methods with a caring, child-centered approach.
+        Her credentials reflect a deep commitment to teaching. She is a member of the American College of Musicians and the National Guild of Piano Teachers, and she holds a Master of Music in Piano Pedagogy and a Master’s in Music Education, graduating with highest honors. She has also held a Preschool through 12th Grade Music Teaching Certificate for 15 years and explored advanced teaching methodologies through doctoral-level coursework in Piano Pedagogy. Her extensive background allows her to pair proven instructional methods with a warm and child-centered approach.
       </p>
 
       <p>
-        Her lessons are engaging and age-appropriate, with children learning through music games, movement activities, listening exercises, creative storytelling, and hands-on exploration at the piano. She believes that children learn best when lessons are fun, interactive, and filled with positive encouragement. Her goal is to help every child develop a strong musical foundation while nurturing curiosity and a lifelong love of music.
+        Her teaching combines piano fundamentals with age-appropriate music games and movement activities. Mrs. Monica believes that children learn best through play, positive reinforcement, and when lessons are fun, interactive, and filled with encouragement.  By turning learning into a fun adventure, she helps students stay motivated and excited about making music and enjoy their musical journey.
       </p>
 
       <p>
-        As a member of the American College of Musicians and the National Guild of Piano Teachers, she believes that every student learns differently and adapts her teaching to each student's personality, learning style, and age. Her teaching emphasizes healthy technique, musical expression, creativity, and, most importantly, the joy of making music.
+        Believing that every child learns differently, Mrs. Monica adapts her teaching to each student's personality, learning style, and age. Her teaching emphasizes healthy technique, musical expression, creativity, and, most importantly, the joy of making music. She considers it a great privilege to share her love of music with each student and family she serves and looks forward to helping every child through the wonderful adventure of piano study.
       </p>
 
-      <p>
-        Beyond teaching, she is an experienced accompanist, having served as a pianist for church services and accompanied school choirs at performances and festivals. She also enjoys attending concerts, reading, and hiking. She considers it a privilege to share her love of music with each student and family she serves and looks forward to helping every child through the wonderful adventure of piano study.
-      </p>
-        
-
-      <h3>Teaching Philosophy</h3>
-      <ul>
+      <h3 style="color: #1e6fd9;">Teaching Philosophy</h3>
+      <ul style="font-family: Tahoma, sans-serif;">
         <li>Music should be joyful and accessible.</li>
         <li>Technique and creativity develop together.</li>
         <li>Encouragement builds confidence.</li>
@@ -202,7 +199,7 @@
       </p>
 
       <h4>Beginner Lessons</h4>
-      <p>Ideal for students with little or no experience. We cover:</p>
+      <p>Ideal for students with little or no experience. I help with:</p>
       <ul>
         <li>Reading music</li>
         <li>Rhythm, technique, coordination</li>
@@ -217,7 +214,7 @@
         <li>Expression, dynamics, articulation, phrasing</li>
         <li>Music theory, harmony, analysis</li>
         <li>Overcoming stage fright, memorization strategies</li>
-        <li>More challenging repertoire</li>
+        <li>Preparation for auditions and recitals</li>
       </ul>
 
       <h4>Adult Lessons</h4>
@@ -238,34 +235,21 @@
 
     <!-- Contact Page -->
     <section id="contact">
-      <h2>Contact</h2>
+      <h2 style="color: #1e6fd9;">Contact</h2>
 
+      <h3 style="color: #1e6fd9;">Phone</h3>
+      <p><a href="tel:+16786007012">Musical Elements Studio: 678-600-7012</a></p>
+
+      <h3 style="color: #1e6fd9;">Email</h3>
+      <p><a href="mailto:musicalelementsstudio@gmail.com">musicalelementsstudio@gmail.com</a></p>
+      <p><a href="mailto:monica_music@outlook.com">monica_music@outlook.com</a></p>
+
+      <h3 style="color: #1e6fd9;">Address</h3>
       <p>
-        I’d love to answer your questions or help you schedule a trial lesson.
+        <a href="https://www.google.com/maps/search/?api=1&query=3411+Howell+St+Suite+B+Duluth+GA+30096" target="_blank" rel="noopener">
+          3411 Howell St Suite B<br />Duluth, GA 30096
+        </a>
       </p>
-
-      <h3>Contact Form</h3>
-      <form>
-        <p>
-          <label for="name">Name:</label><br />
-          <input type="text" id="name" name="name" />
-        </p>
-        <p>
-          <label for="email">Email:</label><br />
-          <input type="email" id="email" name="email" />
-        </p>
-        <p>
-          <label for="age">Student’s age:</label><br />
-          <input type="text" id="age" name="age" />
-        </p>
-        <p>
-          <label for="message">Message:</label><br />
-          <textarea id="message" name="message" rows="4"></textarea>
-        </p>
-        <p>
-          <button type="submit">Send Message</button>
-        </p>
-      </form>
 
       <p>
         I look forward to helping you begin your musical journey.
